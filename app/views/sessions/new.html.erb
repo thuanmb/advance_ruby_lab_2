@@ -1,0 +1,6 @@
+<%= form_for @sign_in, url: sessions_create_path do |f| %>
+  <div style="color:brown"><%= f.object.errors.full_messages.to_sentence %></div>
+  <%= f.text_field :email, placeholder: "Email" %>
+  <%= f.password_field :password, placeholder: "Password" %>
+  <%= f.submit "Sign Up" %>
+<% end %>

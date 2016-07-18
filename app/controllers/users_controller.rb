@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  def index
+  end
+
   def new
     build_user({})
   end
